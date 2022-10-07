@@ -143,7 +143,7 @@ ifc <- function(data, var1, var2, wts = NULL){
     data$Maxconc_EI <- ifelse(data$TEI_sh_cum>=data$EI_Tot_sh,
                               data$EI_Tot_sh,
                               data$Maxconc_EI)
-    
+     
   }
   
   data$lagMaxconc_EI <- lag(data$Maxconc_EI)	
